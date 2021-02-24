@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeCrontoller;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\PrivacyController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TermsController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +19,14 @@ use App\Http\Controllers\homeCrontoller;
 |
 */
 
-Route::get('/', [homeCrontoller::class, 'home']);
+Route::get('/', [homeCrontoller::class, 'homeIndex']);
+Route::post('/contctSend', [homeCrontoller::class, 'contactsSend']);
+
+// page route
+Route::get('/course', [CourseController::class, 'CoursePage']);
+Route::get('/privacy', [PrivacyController::class, 'PrivacyPage']);
+Route::get('/projects', [ProjectController::class, 'projectsPage']);
+Route::get('/terms', [TermsController::class, 'TermsPage']);
+Route::get('/blog', [BlogController::class, 'BolgPage']);
+Route::get('/contact', [ContactController::class, 'concatPage']);
+

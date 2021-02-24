@@ -15,6 +15,8 @@
     <link href="{{asset('css/owl.carousel.min.css')}}" rel="stylesheet" >
     <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet">
     <link href="{{asset('css/animate.css')}}" rel="stylesheet">
+      <link href="{{asset('css/app.css')}}" rel="stylesheet">
+
 </head>
 <body>
 
@@ -26,6 +28,9 @@
 <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/owl.carousel.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/axios.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+
+
 </body>
 </html>
